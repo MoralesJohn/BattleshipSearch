@@ -25,7 +25,7 @@ def find_the_rest(gridsize, x, y):
     return [center, down, (x, y + 2)]
 
 def filter_hit_check(gridsize, x, y):
-    legal = range(1, gridsize + 1)
+    legal = range(1, gridsize + 2)
     if x in legal and y in legal:
         return hit(x, y)
     return False
